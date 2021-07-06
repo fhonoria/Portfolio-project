@@ -82,6 +82,34 @@ p {
   padding: 120px 60px;
 }
 
+.about-hero {
+  margin-top: 160px;
+}
+
+.about-hero-content {
+  margin: 30px;
+}
+
+.about-hero h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.about-hero h2 {
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.about-hero p {
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
+  line-height: 2;
+  color: var(--text-color);
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 50px;
@@ -107,6 +135,17 @@ p {
     padding: 80px 20px;
   }
   .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .about-hero {
+    margin: 80px;
     padding: 0;
     text-align: center;
   }
