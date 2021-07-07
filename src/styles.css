@@ -1,5 +1,6 @@
 :root {
   --text-color: #272142;
+  --branding-color: #6c63ff;
   --primary-font-family: "Playfair Display", serif;
   --secondary-font-family: "Poppins", serif;
 }
@@ -62,7 +63,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   color: white;
-  background: #6c63ff;
+  background: var(--branding-color);
   border-radius: 4px;
   padding: 15px 40px;
 }
@@ -71,9 +72,9 @@ p {
   font-family: var(--secondary-font-family);
   font-size: 16px;
   line-height: 24px;
-  color: #6c63ff;
+  color: var(--branding-color);
   background: white;
-  border: 1px solid #6c63ff;
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
   padding: 15px 25px;
 }
@@ -121,6 +122,39 @@ p {
   font-size: 14px;
 }
 
+nav {
+  padding: 20px 0;
+}
+
+nav img {
+  max-height: 40px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  padding-left: 10px;
+  font-family: var(--secondary-font-family);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  opacity: 70%;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 50px;
@@ -159,5 +193,9 @@ p {
     margin: 80px;
     padding: 0;
     text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 }
