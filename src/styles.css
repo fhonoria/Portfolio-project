@@ -135,6 +135,7 @@ nav li {
   list-style: none;
   line-height: 42px;
   padding-left: 10px;
+  opacity: 70%;
   font-family: var(--secondary-font-family);
 }
 
@@ -146,7 +147,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--text-color);
-  opacity: 70%;
+
   transition: all 100ms ease-in-out;
 }
 
